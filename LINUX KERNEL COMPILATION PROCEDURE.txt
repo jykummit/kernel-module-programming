@@ -1,0 +1,9 @@
+->make menuconfig
+->make -j4 or j8(depending on machine)
+->make modules
+->sudo module install
+->sudo make install
+->sudo update-grub
+->sudo reboot
+
+->uname -r(after rebooting)

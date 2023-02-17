@@ -1,0 +1,80 @@
+Linux internals topics:
+
+1.architecture of linux,componenet sof linux system -->user space and kernel space?.
+2.introduction to linux os?
+3.what is kernel and its types?
+4.difference between monolithical and micro kernel?
+5.system calls and how to call them?
+	 1.priority values minimum and maximum
+	2.NICE AND PAIR VALUES.
+6. kernel data structures-->linkedlist,queues,maps and binary trees.
+7.process management topics,process context,states,schedulars,process queues->runqueue and wait queue.
+	1.prority levels   static pripority = -20 to +19
+	2.dynamic priority  = schedular interactive estimator
+	3 real time priority  = 1-99
+	4.140 priority levels
+	5.process creation-->fork,vfork,kernel thread,pthread.
+8.Inter process communication.
+9.Interrupts and interrupt handlers,,Interrupt contect,Implementing interrupt handlers and methods.?
+	1.top halves
+	2.Bottom halves
+	3.tasklets
+	4.softirqs
+	5.exceptions
+	6.ISRs-interrupt service request
+10.process synchronization,process scheduling.
+11. ARM architecture,pipelining and parallism.
+12.Configuration and building of linux kernel-->sorce code,extract etc.
+13.Linux commands and softlink.
+14.Managing partitions and 1file systems,and sizesbof each partition.
+15.Kernel booting process and x86 and ARM .
+16. Runlevels in linux os.
+17. Synchronization concepts.
+	1.semaphores -->binsary and counting
+	2.mutex
+	3.spinlocks -->licked and unlocked
+	4.race condition
+	5.critical region
+	6.shared resources
+18.multi threading concepts --->
+	deadlocks and methods to prevent,
+	starvation,
+	race conditions.
+19.SRAM and DRAM ?,flash memory?
+20.OS scheduling algorithms -->RR,SJF,FIFO, etc.
+21.simple kernel module programming and excution commands.
+22.IPC mechanisms-->message queues,shared memory,semaphores,signal,pipe.
+23.what is microcontroller and microprocessor?
+24.shared library,static library?
+25. what is daemons?
+26.zombiee process,ptrace,slab allocator,process discriptor?
+27.what is device driver and Types of device drivers?
+28.major and minor numbers?
+29.file operations-->read,write,open,release,ioctl.
+30.DMA,memory mapping in kernel-->
+	1.vmalloc,kmalloc.
+	2.page allocator
+	3.slab allocator
+	4.page cache
+
+DEVICE DRIVERS
+
+1.what is device driver,and its types?
+2.what is character driver?
+3.what is block driver?
+4.what is network device driver?
+5. Difference between char and block drivers?
+6.difference between block and network driver?
+7. What is insmode and rmmod?
+8.How to communicate user to kernel?
+9.Difference between minor and major numbers?
+10.what is mknod?
+11.What is syntax for register and unregister driver?
+12. What are file operations used in module programing?
+13. How you show the output after run the program ?-->?echo
+14. What is DMA?
+15.How the kernel modules are inserted?
+16. What are top halfs and bottom halfs?
+17. what is device tree?
+18.what is inode?
+19.what are called jiffies?

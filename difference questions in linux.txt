@@ -1,0 +1,48 @@
+  1. Different IPC mechanisms in QNX & Linux.
+ans: 
+
+Linux IPC mechanisms:
+     Linux supports three types of interprocess communication mechanisms which first appeared in Unix System V (1983). 
+     These are message queues, semaphores and shared memory.
+
+Mesaage queues : Message queues allow one or more processes to write messages which will be read by one or more reading processes.
+sempaphores : Semaphores can be used to implement critical regions, areas of critical code which only one process at a time should be executing.
+shared memory : Shared memory allows one or more processes to communicate via memory that appears in all of their virtual address spaces. 
+                The pages of the virtual memory is referenced by page table entries in each of the sharing processes page tables.It does not have
+                to be at the same address in all of the processes virtual memory.
+
+QNX IPC mechanisms:                       
+                         Service:	           Implemented in:
+                    Message-passing	                  Kernel
+                        Signals	                          Kernel
+                   POSIX message queues	                  External process
+                       Shared memory	               Process manager
+                            Pipes	                External process
+                            FIFOs	                External process
+
+2.Discussion on Shared Memory
+ans:
+    Processes and threads can communicate directly with one another by sharing parts of their memory space and then reading and writing the data 
+    stored in the shared memory. 
+    Synchronization of shared memory is the responsibility of the application program.Shared memory is a memory shared between two or more processes.
+        
+            shared memory-->1.process1, 2.process2
+             
+           1. Create the shared memory segment or use an already created shared memory segment (shmget())
+
+           2. Attach the process to the already created shared memory segment (shmat())
+
+           3 .Detach the process from the already attached shared memory segment (shmdt())
+
+           4. Control operations on the shared memory segment (shmctl())
+3..What is greb loader
+ans:
+    1. GRUB stands for GRand Unified Bootloader. Its function is to take over from BIOS at boot time, load itself, load the Linux kernel into memory,
+       and then turn over execution to the kernel.Once the kernel takes over, GRUB has done its job and it is no longer needed.
+    2. GRUB is a multi boot boot-loader, is a programm who run at the system start and allow you to select what Operation system you want to start, 
+       like if you want ubuntu and windows on the same computer, with GRUB you can select those at system start.
+    3. Boot loader is a program which is called by BIOS and once again initializes. boot related hardware and finally boot loader is the one 
+       who exactly Knows(memory location) where the Kernel image is.
+
+
+    

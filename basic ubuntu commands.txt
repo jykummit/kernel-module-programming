@@ -1,0 +1,112 @@
+ubuntu terminal shortcuts: 
+
+1. cntl+alt+t  :: to open the terminal.
+2. cntl+shift+w :: close current tab.
+3. cntl+a :: move cursor to beginning of line.
+4. cntl+e :: move cursor to end of line.
+5. cntl+u :: clears the entire current line.
+6. cntl+k :: clears the command from cursor right.
+7. cntl+W :: delete the word before the cursor.
+8. cntl+r :: delete the word before the cursor.
+9. cntl+c :: kill the current process.
+10. cntl+z :: suspend the current process.
+11. cntl+l ::clears the terminal output.
+12. cntl+f :: move forward one word.
+13. cntl+b :: move backeward one word.
+14. cntl+shift+c :: copy to the highlighted command to the clipboard.
+15. .cntl+shift+v or shift+insert :: paste the content of the clipboard.
+16.up/down arrow keys :: to scroll through your history.
+17. tab :: used to complete the command you are typing.
+
+
+
+
+
+
+
+
+1. pwd: present working directory .ex: /home/jyothi
+2. dir : to print all the available directories in the present working directory.
+3. ls : list down all the directories and files inside the present working directory.
+         ls -al:detail information of the files/directories.
+         ls -R : to print subdirectories of a directory
+         ls -a : to get the hidden files
+
+4. cd : change directory form one to another
+5. cd / : change directory to root directory.
+6. cd .. : back towards one step.
+	cd - : takes you to the previous directory
+7. touch : to create a new file along with timestamp(when it will created).
+	ex: touch file.txt
+	     stat file1.txt
+8. cat : to show the content of any file. or to store multiple files content in a single 
+	   file . ex: cat file1.txt file2.txt > output.txt
+	              cat output.txt
+9.mkdir : to create a new directory. ex: mkdir new 
+10.rm: to remove the specific file from a directory.
+11. rmdir: to remove a particular empty directory.
+12. cp : copy any file or folder to any directory.
+	   ex: cp file1.txt directory1
+13. cp new -r directory1 :: if you want to copy the complete folder.
+14. mv : to move files from one place to another.
+	ex: mv file2.txt directory1
+15. head : to get the first ten lines of a text file.
+16. tail : to get the last ten lines of a text file.
+17. uname : to get the release number,version of linux,-a flg is used to get detailed information.
+18. wget : to download the content from the internet.
+19. apt-get or -apt : used to install or remove packages,apt requires sudo privileges to successfully excute the command.
+	ex: sudo apt install[package name].
+	ex:sudo apt remove[package name].
+20. Histroy : list of commands with numeric numbers ececuted.
+21. grep : search for a pattern in which a specific word lies.
+22. man : get the complete user manual of any command.
+23. ps : get list of processes.
+
+
+
+24 . zip or unzip : for zip archive used "gzip" ,for unzip we used "gunzip".
+25.hostname : it will print your hostname on the terminal.
+26. ping : to check the connectivity to your server.
+	ex:ping youtube.com
+27. w : user details that are currently logged into the system.
+28. useradd : if you want to add another user to your system.
+	ex:sudo useradd jyothi
+29.passwd : you can change the password of your ubuntu user.
+30. sudo : super user permisiions.
+31. df : display filesystem display information about disk space.
+32.du : (directory usage) it displays the size of a directory and all of its subdirectories.
+33. free : Display the amount of free space available on the system.
+34 . uname -a : provides a wide range of basi cinformation about the system.
+35. top : display the process using most system resorces at any given time.
+36. info : similar to man command.
+37. whatis : brief description of what is the functionality of specific built in linux commands.
+
+
+
+38. find : used to search files
+39. open : used to open a file and open the directory .
+40. | : pipe symbol used to add two or more commands,where the output of the prievous command
+	is used as the input for the next command.
+41. diff : (difference) compares two contents of a line by line.
+	diff [option] file1 file2    ex: diff file.txt file1.txt
+	diff -c :display difference between two files in a context form.
+	diff  -u : display output redundant information.
+	diff -i : diff command case insensitive.
+
+42. tar : archives multiple files into a TAR file similar to zip.
+
+
+
+
+43.chmod : modifies a file or directory's read,write,and execute permisions.
+	each file is associated with three user classes-owner,group member and others.
+	chmod [permission][filename]  ex: chmod 777 file.txt
+44. chown : to change the onwership of a file,directory or symbolic link to a specific username.
+	ex:chown linuxuser2 filename.txt
+45. jobs:  job command will display all the running processes along with their statuses.
+46. kill : to terminate an unresponsive program manually. to kill a program,you must know its process identification number(pid).
+	if you don't know the PID,run the following command.
+	    ps ux 
+47.echo : displays a line of text or string using the standard output.
+	echo "hostinger tutorials"
+
